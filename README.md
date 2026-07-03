@@ -16,7 +16,7 @@ Today, my goal is to combine these experiences and grow into a **DevSecOps Engin
 
 ---
 
-## 🎯 Goal
+## 🎯 Career Goal
 
 My long-term goal is to become a DevSecOps Engineer by building strong foundations in:
 
@@ -70,3 +70,10 @@ The goal is not just to understand the tools, but to understand the problems the
 ## 📈 Progress
 
 Current Sprint: **Sprint 1 – DevOps Foundations** 🚀
+
+---
+
+## Current Status
+
+- 🟢 Sprint 0 Completed
+- 🟡 Sprint 1 In Progress
