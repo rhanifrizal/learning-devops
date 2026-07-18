@@ -4,6 +4,12 @@
 
 Learn how Docker volumes provide persistent storage, understand the difference between named volumes and bind mounts, and share data between containers and the host filesystem.
 
+
+## Diagram
+
+![Docker Volumes and Bind Mounts](../../assets/docker/docker-volume.png)
+
+
 ## What are Docker Volumes?
 
 Docker volumes are a native storage mechanism designed to persist data generated or used by Docker containers. By default, any data created inside a container is stored in its writable layer. If the container is deleted, that data is permanently lost. Volumes isolate data from the container lifecycle by storing it separately on the host filesystem.

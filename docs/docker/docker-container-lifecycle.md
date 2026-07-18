@@ -5,6 +5,11 @@
 Learn how Docker containers progress through their lifecycle, manage running and stopped containers, inspect container details, retrieve logs, and perform common container management operations.
 
 
+## Diagram
+
+![Docker Container Lifecycle](../../assets/docker/docker-lifecycle.png)
+
+
 ## What is a Container Lifecycle?
 
 The container lifecycle refers to the sequence of states that a Docker container goes through from creation until deletion.

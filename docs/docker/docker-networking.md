@@ -5,6 +5,11 @@
 Learn how Docker networking enables communication between containers, the host machine, and external networks, and how to publish containerized applications using custom networks and port mapping.
 
 
+## Diagram
+
+![Docker Networking](../../assets/docker/docker-network.png)
+
+
 ## What is Docker Networking?
 
 Docker networking enables isolated containers to communicate with each other, with the Docker host, and with external networks such as the internet. It provides virtual networks, IP addressing, DNS resolution, and traffic routing for containerized applications.

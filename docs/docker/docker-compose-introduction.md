@@ -5,6 +5,11 @@
 Learn how Docker Compose simplifies multi-container application management, understand the structure of a `compose.yaml` file, and deploy multiple services using a single command.
 
 
+## Diagram
+
+![Docker Compose Overview](../../assets/docker/docker-compose.png)
+
+
 ## What is Docker Compose?
 
 Docker Compose is a native orchestration tool designed for defining, configuring, and running multi-container Docker applications using a single, centralized configuration file. Instead of typing long, complex `docker run` commands into the terminal for every single microservice, you define your entire application stack, including containers, networks, volumes, and environment variables in a plain text file named `compose.yaml`.

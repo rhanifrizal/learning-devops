@@ -5,6 +5,11 @@
 Learn how Docker images are stored and shared using Docker registries, understand image tagging and versioning, and publish and retrieve images from Docker Hub.
 
 
+## Diagram
+
+![Docker Registry and Docker Hub](../../assets/docker/docker-registry.png)
+
+
 ## Docker Image Lifecycle
 
 ```text
