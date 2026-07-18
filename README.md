@@ -1,10 +1,16 @@
-> 🚧 This repository is actively being updated as I progress through my DevOps and DevSecOps learning journey.
-
 # 🚀 Learning DevOps
 
-This repository documents my journey transitioning from **Software Developer** to **DevSecOps Engineer** through structured learning, hands-on labs, and real-world projects.
+> 🚧 This repository is actively being updated as I progress through my DevOps and DevSecOps learning journey.
 
-It serves as both my personal knowledge base and a portfolio to showcase my journey from foundational concepts to production-ready DevOps and DevSecOps practices.
+A structured, hands-on portfolio documenting my transition from **Software Engineer** to **DevSecOps Engineer** through real-world labs, projects, automation, and cloud-native technologies.
+
+---
+
+![Linux](https://img.shields.io/badge/Linux-Completed-FCC624?logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-Completed-F05032?logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Completed-2496ED?logo=docker)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Up_Next-lightgrey?logo=githubactions)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
@@ -12,10 +18,13 @@ It serves as both my personal knowledge base and a portfolio to showcase my jour
 
 - [About Me](#-about-me)
 - [Career Goal](#-career-goal)
+- [What You'll Find](#-what-youll-find)
 - [Learning Philosophy](#-learning-philosophy)
 - [Roadmap](#-roadmap)
 - [Current Progress](#-current-progress)
-- [Current Status](#-current-status)
+- [Repository Statistics](#-repository-statistics)
+- [Featured Projects](#-featured-projects)
+- [Documentation](#-documentation)
 - [Tech Stack](#-tech-stack-learning-progress)
 - [Repository Structure](#-repository-structure)
 
@@ -36,7 +45,7 @@ Today, my goal is to combine my experience in software development, networking, 
 My long-term goal is to become a DevSecOps Engineer by building strong foundations in:
 
 - Linux
-- Cloud Platforms
+- Cloud Computing (AWS)
 - Docker & Containerization
 - Infrastructure as Code (Terraform)
 - Kubernetes
@@ -46,6 +55,22 @@ My long-term goal is to become a DevSecOps Engineer by building strong foundatio
 Rather than focusing only on certifications, I want to gain practical experience through hands-on labs and real-world projects that demonstrate my ability to design, automate, deploy, and secure modern applications.
 
 This repository will continuously evolve as I learn new technologies and build production-inspired solutions.
+
+---
+
+## 📚 What You'll Find
+
+This repository contains:
+
+- 📖 Technical documentation
+- 🛠️ Hands-on labs
+- 🚀 Real-world projects
+- 📊 Architecture diagrams
+- 🐳 Docker examples
+- ☁️ Cloud infrastructure
+- 🔄 CI/CD pipelines
+- 🔐 DevSecOps practices
+- ❓ Interview preparation notes
 
 ---
 
@@ -68,52 +93,107 @@ The goal is not just to understand the tools, but to understand the problems the
 ## 🗺️ Roadmap
 
 - [x] Sprint 0 - Environment Setup
-- [x] Sprint 1.1 - Why DevOps Exists
-- [x] Sprint 1.2 - DevOps Pipeline
-- [x] Sprint 1.3 - Introduction to CI/CD (GitHub Actions)
-- [ ] Sprint 1.4 - CI vs CD
-- [ ] Sprint 1.5 - Git Push to Production
-- [ ] Sprint 2 - Linux
-- [ ] Sprint 3 - Git & GitHub
-- [ ] Sprint 4 - Docker
-- [ ] Sprint 5 - GitHub Actions (CI/CD)
-- [ ] Sprint 6 - AWS Fundamentals
-- [ ] Sprint 7 - Terraform (Infrastructure as Code)
-- [ ] Sprint 8 - Kubernetes
-- [ ] Sprint 9 - Monitoring & Logging
-- [ ] Sprint 10 - DevSecOps
-- [ ] Sprint 11 - Capstone Project
+- [x] Sprint 1 - DevOps Foundations
+- [x] Sprint 2 - Linux Fundamentals
+- [x] Sprint 3 - Docker Fundamentals
+- [ ] Sprint 4 - GitHub Actions (CI/CD)
+- [ ] Sprint 5 - AWS Fundamentals
+- [ ] Sprint 6 - Terraform
+- [ ] Sprint 7 - Kubernetes
+- [ ] Sprint 8 - Monitoring & Logging
+- [ ] Sprint 9 - DevSecOps
+- [ ] Sprint 10 - Capstone Project
 
 ---
 
 ## 📈 Current Progress
 
-Current Milestone: **DevOps Foundations**
+**Current Milestone:** DevOps Foundations
 
-Current Sprint: **Sprint 1.4 – CI vs CD**
+| Module            | Progress          |
+|-------------------|-------------------|
+| Linux             | ██████████ 100%   |
+| Git               | ██████████ 100%   |
+| Docker            | ██████████ 100%   |
+| GitHub Actions    | ░░░░░░░░░░ 0%     |
+| AWS               | ░░░░░░░░░░ 0%     |
+| Terraform         | ░░░░░░░░░░ 0%     |
+| Kubernetes        | ░░░░░░░░░░ 0%     |
+| Monitoring        | ░░░░░░░░░░ 0%     |
+| DevSecOps         | ░░░░░░░░░░ 0%     |
 
 ---
 
-## Current Status
+## 📊 Repository Statistics
 
-- 🟢 Sprint 0 Completed
-- 🟡 Sprint 1 In Progress
+| Category                  | Count     |
+|---------------------------|-----------|
+| Documentation Articles    | 21+       |
+| Hands-on Labs             | 30+       |
+| Projects                  | 2+        |
+| Architecture Diagrams     | 5         |
+| CLI Cheatsheets           | 2         |
 
 ---
 
-## Tech Stack (Learning Progress)
+## 🚀 Featured Projects
 
-| Technology     | Status          | Labs |
-| ----------     | --------------  | ---: |
-| Linux          | 🟡 In Progress  | 0/10 |
-| Git            | 🟡 In Progress  |  1/5 |
-| Docker         | ⚪ Planned      |  0/8 |
-| GitHub Actions | 🟡 In Progress  |  1/5 |
-| AWS            | ⚪ Planned      | 0/12 |
-| Terraform      | ⚪ Planned      |  0/8 |
-| Kubernetes     | ⚪ Planned      | 0/12 |
-| Monitoring     | ⚪ Planned      |  0/6 |
-| DevSecOps      | ⚪ Planned      | 0/10 |
+| Project               | Description                                                                                               |
+|-----------------------|-----------------------------------------------------------------------------------------------------------|
+| **Company Server**    | A production-inspired Flask operations dashboard built with Flask, Gunicorn, Docker, and Docker Compose.  |
+| **Compose Demo**      | A minimal project demonstrating Docker Compose fundamentals.                                              |
+
+---
+
+## 📚 Documentation
+
+### DevOps
+
+- ✔ Why DevOps
+- ✔ DevOps Pipeline
+- ✔ CI vs CD
+- ✔ Git Push to Production
+
+### Linux
+
+- ✔ Fundamentals
+- ✔ Filesystem Navigation
+- ✔ File Operations
+- ✔ Users & Permissions
+- ✔ Process Management
+- ✔ Services
+- ✔ Logs
+- ✔ Networking
+- ✔ Bash Scripting
+- ✔ Linux CLI Cheatsheet
+
+### Docker
+
+- ✔ Introduction
+- ✔ Installation
+- ✔ Images & Dockerfile
+- ✔ Container Lifecycle
+- ✔ Networking
+- ✔ Volumes
+- ✔ Docker Compose
+- ✔ Registry & Docker Hub
+- ✔ Docker CLI Cheatsheet
+
+---
+
+## 🛠️ Tech Stack (Learning Progress)
+
+| Technology     | Status       |
+| -------------- | ------------ |
+| Linux          | ✅           |
+| Git            | ✅           |
+| Docker         | ✅           |
+| GitHub Actions | 🚧           |
+| AWS            | ⏳           |
+| Terraform      | ⏳           |
+| Kubernetes     | ⏳           |
+| Monitoring     | ⏳           |
+| DevSecOps      | ⏳           |
 
 ---
 
@@ -122,13 +202,25 @@ Current Sprint: **Sprint 1.4 – CI vs CD**
 ```text
 learning-devops/
 │
-├── README.md              # Project overview
-├── docs/                  # Documentation and notes
-├── labs/                  # Hands-on labs
-├── projects/              # Practical projects
-├── scripts/               # Automation scripts
-├── assets/                # Images and diagrams
-└── .github/workflows/     # GitHub Actions (CI/CD)
+├── README.md
+├── assets/
+│   └── docker/
+├── docs/
+│   ├── devops/
+│   ├── docker/
+│   ├── linux/
+│   └── roadmap.md
+├── labs/
+│   ├── 01-linux/
+│   ├── 02-git/
+│   ├── 03-docker/
+│   └── ...
+├── projects/
+│   ├── company-server/
+│   └── compose-demo/
+├── scripts/
+└── .github/
+    └── workflows/
 ```
 
 ---
@@ -137,5 +229,5 @@ learning-devops/
 
 This repository is continuously updated as I progress toward becoming a DevSecOps Engineer.
 
-Every milestone reflects new knowledge, hands-on experience, lessons learned, and practical projects built throughout the journey.
+Every milestone represents new knowledge, hands-on experience, practical projects, and lessons learned while progressing toward becoming a DevSecOps Engineer.
 
