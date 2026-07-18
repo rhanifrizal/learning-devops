@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A containerized DevOps operations dashboard built with Flask and Docker."
+    >
+
+    <title>{{ app_info.application }} | Operations Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="hero">
+            <div class="top-row">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    All systems operational
+                </div>
+
+                <span class="version-badge">
+                    v{{ app_info.version }}
+                </span>
+            </div>
+
+            <p class="eyebrow">DEVOPS LEARNING PROJECT</p>
+
+            <h1>{{ app_info.application }}</h1>
+
+            <p class="subtitle">
+                A containerized operations dashboard used to practise Linux,
+                Docker, automation, monitoring, cloud deployment, and CI/CD.
+            </p>
+        </header>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-eyebrow">Runtime</p>
+                    <h2>Application Status</h2>
+                </div>
+
+                <span class="live-label">
+                    <span class="pulse-dot"></span>
+                    Live
+                </span>
+            </div>
+
+            <div class="status-grid">
+                <article class="status-card">
+                    <span class="card-icon">✓</span>
+
+                    <div>
+                        <span class="label">Application status</span>
+                        <strong class="healthy">
+                            {{ app_info.status | capitalize }}
+                        </strong>
+                    </div>
+                </article>
+
+                <article class="status-card">
+                    <span class="card-icon">ENV</span>
+
+                    <div>
+                        <span class="label">Environment</span>
+                        <strong>{{ app_info.environment }}</strong>
+                    </div>
+                </article>
+
+                <article class="status-card">
+                    <span class="card-icon">HOST</span>
+
+                    <div>
+                        <span class="label">Container hostname</span>
+                        <strong>{{ app_info.hostname }}</strong>
+                    </div>
+                </article>
+
+                <article class="status-card">
+                    <span class="card-icon">RUN</span>
+
+                    <div>
+                        <span class="label">Deployment platform</span>
+                        <strong>{{ app_info.platform }}</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="lower-grid">
+            <article class="panel">
+                <div class="section-heading compact">
+                    <div>
+                        <p class="section-eyebrow">Interfaces</p>
+                        <h2>Available Endpoints</h2>
+                    </div>
+                </div>
+
+                <div class="endpoint-list">
+                    <a class="endpoint" href="/">
+                        <span class="method">GET</span>
+
+                        <span>
+                            <strong>/</strong>
+                            <small>Operations dashboard</small>
+                        </span>
+                    </a>
+
+                    <a class="endpoint" href="/health">
+                        <span class="method">GET</span>
+
+                        <span>
+                            <strong>/health</strong>
+                            <small>Application health check</small>
+                        </span>
+                    </a>
+
+                    <a class="endpoint" href="/api/info">
+                        <span class="method">GET</span>
+
+                        <span>
+                            <strong>/api/info</strong>
+                            <small>Runtime information API</small>
+                        </span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="panel">
+                <div class="section-heading compact">
+                    <div>
+                        <p class="section-eyebrow">Project</p>
+                        <h2>Technology Stack</h2>
+                    </div>
+                </div>
+
+                <div class="technology-list">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Gunicorn</span>
+                    <span>Linux</span>
+                    <span>Docker</span>
+                    <span>Docker Compose</span>
+                </div>
+
+                <div class="server-time">
+                    <span class="label">Current server time</span>
+                    <strong>{{ app_info.server_time }}</strong>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <span>{{ app_info.application }}</span>
+            <span>Built for the DevOps learning journey</span>
+        </footer>
+    </main>
+</body>
+</html>
