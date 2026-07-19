@@ -57,4 +57,3 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", "5000"))
     app.run(host="0.0.0.0", port=port)
 
-echo 'BROKEN_SYNTAX =' >> projects/company-server/web-app/app.py
