@@ -2,6 +2,7 @@
 
 > 🚧 This repository is actively being updated as I progress through my DevOps and DevSecOps learning journey.
 
+cache test
 A structured, hands-on portfolio documenting my transition from **Software Engineer** to **DevSecOps Engineer** through real-world labs, projects, automation, and cloud-native technologies.
 
 ---
