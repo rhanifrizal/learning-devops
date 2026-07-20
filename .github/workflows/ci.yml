@@ -10,6 +10,8 @@ on:
       - main
 
 jobs:
+
+  # Validate repository documentation
   docs-check:
     name: Documentation Check
     runs-on: ubuntu-latest
@@ -21,12 +23,12 @@ jobs:
       - name: Verify Markdown Files
         run: find . -name "*.md"
 
-    
+  # Validate the Flask application
   python-check:
     name: Python Validation
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -41,19 +43,15 @@ jobs:
       - name: Compile Python
         run: python -m py_compile projects/company-server/web-app/app.py
 
-
+  # Validate Docker Compose only after Python passes
   docker-check:
     name: Docker Compose Validation
+    needs: python-check
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        
+
       - name: Validate Compose File
         run: docker compose -f projects/company-server/web-app/compose.yaml config
-
-
-
-
-
