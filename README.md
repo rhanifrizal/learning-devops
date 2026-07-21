@@ -9,7 +9,7 @@ A structured, hands-on portfolio documenting my transition from **Software Engin
 ![Linux](https://img.shields.io/badge/Linux-Completed-FCC624?logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-Completed-F05032?logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Completed-2496ED?logo=docker)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Up_Next-lightgrey?logo=githubactions)
+[![CI Pipeline](https://github.com/rhanifrizal/learning-devops/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/rhanifrizal/learning-devops/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
