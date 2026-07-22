@@ -60,6 +60,18 @@ jobs:
       - name: Compile Python
         run: python -m py_compile projects/company-server/web-app/app.py
 
+      - name: Create Build Report
+        run: |
+          echo "Python validation completed successfully." > build-report.txt
+          echo "Workflow: $GITHUB_WORKFLOW" >> build-report.txt
+          echo "Commit: $GITHUB_SHA" >> build-report.txt
+
+      - name: Upload Build Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-report
+          path: build-report.txt
+
   # Validate Docker Compose only after Python passes
   docker-check:
     name: Docker Compose Validation
