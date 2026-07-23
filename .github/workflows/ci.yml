@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+env:
+  PYTHON_VERSION: "3.12"
+
 jobs:
 
   # Validate repository documentation
@@ -47,7 +50,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{env.PYTHON_VERSION}}
           cache: "pip"
           cache-dependency-path: projects/company-server/web-app/requirements.txt
 
@@ -64,7 +67,13 @@ jobs:
         run: |
           echo "Python validation completed successfully." > build-report.txt
           echo "Workflow: $GITHUB_WORKFLOW" >> build-report.txt
+          echo "Repository:: $GITHUB_REPOSITORY" >> build-report.txt
+          echo "Branch: $GITHUB_REF" >> build-report.txt
           echo "Commit: $GITHUB_SHA" >> build-report.txt
+          echo "Actor: $GITHUB_ACTOR" >> build-report.txt
+          echo "Run Number: $GITHUB_RUN_NUMBER" >> build-report.txt
+          echo "Runner OS: $RUNNER_OS" >> build-report.txt
+          echo "Python Version: ${{env.PYTHON_VERSION}}" >> build-report.txt
 
       - name: Upload Build Report
         uses: actions/upload-artifact@v4
