@@ -99,3 +99,20 @@ jobs:
 
       - name: Validate Compose File
         run: docker compose -f projects/company-server/web-app/compose.yaml config
+
+
+  secret-demo:
+    name: GitHub Secrets Demo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display Secret Usage
+        env: 
+          DEMO_USERNAME: ${{ secrets.DEMO_USERNAME }}
+          DEMO_MESSAGE: ${{ secrets.DEMO_MESSAGE }}
+        run: |
+          echo "Successfully loaded repository secrets."
+          echo "Username length: ${#DEMO_USERNAME}"
+          echo "Message length: ${#DEMO_MESSAGE}"
+          echo "$DEMO_USERNAME"
+          echo "$DEMO_MESSAGE"
