@@ -114,5 +114,3 @@ jobs:
           echo "Successfully loaded repository secrets."
           echo "Username length: ${#DEMO_USERNAME}"
           echo "Message length: ${#DEMO_MESSAGE}"
-          echo "$DEMO_USERNAME"
-          echo "$DEMO_MESSAGE"
