@@ -28,6 +28,7 @@ jobs:
     name: Python Validation
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
 
@@ -86,7 +87,7 @@ jobs:
       - name: Upload Build Report
         uses: actions/upload-artifact@v4
         with:
-          name: build-report
+          name: build-report-python-${{ matrix.python-version }}
           path: build-report.txt
 
   # Validate Docker Compose only after Python passes
