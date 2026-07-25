@@ -23,10 +23,11 @@ jobs:
       - name: Verify Markdown Files
         run: find . -name "*.md"
 
-  # Validate the Flask application
+  # Validate the Flask application across multiple Python versions
   python-check:
     name: Python Validation
     runs-on: ubuntu-latest
+    # Execute the same job using multiple Python versions
     strategy:
       fail-fast: false
       matrix:
@@ -87,13 +88,34 @@ jobs:
       - name: Upload Build Report
         uses: actions/upload-artifact@v4
         with:
+          # Create a unique artifact for each matrix job
           name: build-report-python-${{ matrix.python-version }}
           path: build-report.txt
 
-  # Validate Docker Compose only after Python passes
+  # Build the Docker image after successful Python validation
+  docker-build:
+    name: Docker Image Build
+    needs: python-check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: |
+          docker build \
+            -t company-server:${{ github.sha }} \
+            -t company-server:latest \
+            projects/company-server/web-app
+
+      - name: List Docker Images
+        run: docker images
+
+  # Validate Docker Compose configuration only after docker-build passes
   docker-check:
     name: Docker Compose Validation
-    needs: python-check
+    needs: docker-build
     runs-on: ubuntu-latest
 
     steps:
@@ -104,6 +126,7 @@ jobs:
         run: docker compose -f projects/company-server/web-app/compose.yaml config
 
 
+  # Demonstrate secure access to GitHub repository secrets
   secret-demo:
     name: GitHub Secrets Demo
     runs-on: ubuntu-latest
