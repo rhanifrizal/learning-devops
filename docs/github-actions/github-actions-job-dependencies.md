@@ -137,7 +137,9 @@ Docker Validation ───────┘
 
 This is useful when deployment requires several checks to pass.
 
-## Workflow Used in This Repository
+## Workflow Implementation During This Lab
+
+> The repository workflow continued to evolve after this lab. This section preserves the implementation used to demonstrate the topic at that stage of the learning journey.
 
 The repository CI workflow is stored at:
 

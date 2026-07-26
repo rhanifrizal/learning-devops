@@ -168,6 +168,8 @@ company-server    latest
 company-server    a92e8d669b0ab544762d79a22c06a84774a19f2a
 ```
 
+Both tags point to the same image ID, confirming that the commit-specific tag and `latest` identify the same image produced during that workflow run.
+
 This confirms that the application can be successfully containerized before moving to the next stage of the CI pipeline.
 
 ---

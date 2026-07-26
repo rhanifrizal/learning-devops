@@ -34,7 +34,7 @@ Reasons for using runners:
 
 A GitHub-hosted runner is a temporary virtual machine managed entirely by GitHub.
 
-Each workflow execution receives a fresh runner that already includes many common development tools such as Git, Docker, Python, Java, Node.js, and more.
+Each GitHub-hosted job receives a fresh runner environment that already includes many common development tools such as Git, Docker, Python, Java, Node.js, and more.
 
 Once the workflow completes, the runner is automatically destroyed.
 
@@ -46,13 +46,13 @@ Once the workflow completes, the runner is automatically destroyed.
 Workflow Trigger
         │
         ▼
+Job Becomes Ready
+        │
+        ▼
 Provision Runner
         │
         ▼
-Checkout Repository
-        │
-        ▼
-Execute Workflow Jobs
+Execute Job Steps
         │
         ▼
 Upload Logs & Results
@@ -61,7 +61,7 @@ Upload Logs & Results
 Destroy Runner
 ```
 
-Every workflow starts with a brand-new runner.
+Every GitHub-hosted job starts on a newly provisioned runner.
 
 No files, installed packages, or temporary data remain after the workflow finishes unless explicitly cached or uploaded as artifacts.
 
@@ -91,14 +91,17 @@ runs-on: ubuntu-latest
 |----------|---------------|-------------|
 | Managed by | GitHub | Organization |
 | Setup | None | Manual |
-| Environment | Temporary | Persistent |
+| Runner machine | Provisioned per job | Long-lived machine managed by the organization |
+| Workspace isolation | Clean environment for each hosted job | Must be managed and cleaned appropriately |
 | Maintenance | None | Required |
 | Scalability | Automatic | User-managed |
 | Best For | CI/CD pipelines | Specialized hardware, internal networks |
 
 ---
 
-## Current Workflow
+## Workflow Implementation During This Lab
+
+> The repository workflow continued to evolve after this lab. This section preserves the implementation used to demonstrate the topic at that stage of the learning journey.
 
 The current repository uses the following runner configuration:
 

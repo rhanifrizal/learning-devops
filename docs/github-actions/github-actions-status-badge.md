@@ -112,27 +112,24 @@ The badge reflects the status of the `CI Pipeline` workflow located in:
 
 ---
 
-## Current Workflow
+## Workflow Status Calculation
+
+The badge reflects the overall result of the selected workflow and branch. If a required job fails, the workflow is marked as failed and the badge updates accordingly.
 
 Current workflow:
 
 ```text
-Push / Pull Request
+Workflow Triggered
         │
         ▼
-Documentation Check
+Configured Jobs Execute
+        │
+        ├── All required jobs pass → Passing
+        │
+        └── Any required job fails → Failing
         │
         ▼
-Python Validation
-        │
-        ▼
-Docker Compose Validation
-        │
-        ▼
-Workflow Complete
-        │
-        ▼
-Status Badge Updated
+README Badge Updates
 ```
 
 ---

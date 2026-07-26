@@ -99,7 +99,9 @@ Whenever a configured event occurs, GitHub starts executing the workflow.
 
 ---
 
-## Current Workflow
+## Workflow Implementation During This Lab
+
+> The repository workflow continued to evolve after this lab. This section preserves the implementation used to demonstrate the topic at that stage of the learning journey.
 
 ```yaml
 name: CI Pipeline

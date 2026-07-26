@@ -73,7 +73,9 @@ A step is an individual task that can run commands or actions. Steps within the 
 An action is a reusable unit of automation that performs a specific task within a workflow. Actions eliminate repetitive scripting by providing pre-built functionality such as checking out source code, installing programming languages, building Docker images, or logging into cloud providers.
 
 
-## Current Workflow in This Repository
+## Initial Workflow Used in This Lab
+
+> This was the repository's introductory workflow during Sprint 4.1. It was later renamed to `.github/workflows/ci.yml` and expanded into a multi-job CI pipeline.
 
 Current workflow:
 
@@ -169,7 +171,7 @@ Continuous Integration (CI) is a DevOps software development practice.
 
 1. Developers frequently merge code into a central repository.
 2. Every merge triggers automated builds and test suites.
-3. It catches bugs early in production.
+3. It catches bugs early before code reaches production.
 4. It prevents complex downstream merge conflicts.
 
 
@@ -246,7 +248,7 @@ This repository already contains a basic GitHub Actions workflow located in `.gi
 
 The workflow automatically runs whenever code is pushed to the `main` branch or when a pull request is opened. More advanced workflows, including testing, Docker image builds, and CI pipelines, will be implemented in later labs.
 
-Future labs will extend this workflow to automatically build Docker images, validate Docker Compose configurations, and implement a complete Continuous Integration pipeline.
+Later labs expanded this workflow with Python validation, dependency caching, matrix testing, artifacts, secrets, Docker image builds, and job dependencies.
 
 
 ## Commands Used

@@ -294,7 +294,9 @@ These variables are provided automatically and do not need to be manually define
 
 ---
 
-## Current Workflow Configuration
+## Workflow Configuration During This Lab
+
+During this lab, the repository used a workflow-level environment variable to configure Python 3.12. A later Matrix Strategy lab replaced the single version with `${{ matrix.python-version }}` so the application could be validated against Python 3.10, 3.11, and 3.12.
 
 This repository defines the Python version at workflow level:
 
@@ -464,7 +466,7 @@ Sensitive values should be stored using GitHub Secrets and accessed through:
 ${{ secrets.SECRET_NAME }}
 ```
 
-GitHub Secrets will be covered in the next lab.
+The following lab introduced GitHub Secrets for sensitive configuration.
 
 ---
 

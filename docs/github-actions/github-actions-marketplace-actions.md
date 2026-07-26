@@ -143,7 +143,7 @@ Pinning prevents unexpected behavior caused by future Action updates.
 
 ## Marketplace Actions Used in This Repository
 
-This repository currently uses three official GitHub Marketplace Actions.
+During this lab, the repository used three official GitHub Actions.
 
 ### Checkout Repository
 
@@ -166,7 +166,7 @@ uses: actions/setup-python@v5
 
 Purpose:
 
-- Installs Python 3.12.
+- Installs the Python version selected by the workflow.
 - Configures the Python runtime.
 - Restores and saves pip dependency cache.
 

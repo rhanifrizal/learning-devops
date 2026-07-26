@@ -211,6 +211,8 @@ Each matrix job performs:
 
 Current workflow:
 
+> The repository workflow continued to evolve after this lab. This section preserves the implementation used to demonstrate the topic at that stage of the learning journey.
+
 ```text
 Push / Pull Request
 │
