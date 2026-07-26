@@ -114,7 +114,6 @@ jobs:
             echo "Docker build attempt $attempt/3"
 
             if docker build \
-              --pull \
               -t company-server:${{ github.sha }} \
               -t company-server:latest \
               projects/company-server/web-app; then
@@ -135,7 +134,7 @@ jobs:
         run: docker image ls
 
   # Start the containerized application and verify its health
-  docker-compose-test:
+  integration-test:
     name: Docker Compose Integration Test
     needs: docker-build
     runs-on: ubuntu-latest
