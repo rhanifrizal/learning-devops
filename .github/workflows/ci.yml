@@ -31,7 +31,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.11", "3.12"]
+        python-version: 
+          - "3.10"
+          - "3.11"
+          - "3.12"
 
     steps:
       - name: Checkout Repository
@@ -110,7 +113,7 @@ jobs:
             projects/company-server/web-app
 
       - name: List Docker Images
-        run: docker images
+        run: docker image ls
 
   # Validate Docker Compose configuration only after docker-build passes
   docker-check:
