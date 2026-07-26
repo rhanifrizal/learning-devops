@@ -108,14 +108,14 @@ The goal is not just to understand the tools, but to understand the problems the
 
 ## 📈 Current Progress
 
-**Current Milestone:** DevOps Foundations
+**Current Milestone:** CI/CD Automation with GitHub Actions
 
 | Module            | Progress          |
 |-------------------|-------------------|
 | Linux             | ██████████ 100%   |
 | Git               | ██████████ 100%   |
 | Docker            | ██████████ 100%   |
-| GitHub Actions    | ░░░░░░░░░░ 0%     |
+| GitHub Actions    | ███████░░░ 75%    |
 | AWS               | ░░░░░░░░░░ 0%     |
 | Terraform         | ░░░░░░░░░░ 0%     |
 | Kubernetes        | ░░░░░░░░░░ 0%     |
@@ -128,7 +128,7 @@ The goal is not just to understand the tools, but to understand the problems the
 
 | Category                  | Count     |
 |---------------------------|-----------|
-| Documentation Articles    | 21+       |
+| Documentation Articles    | 34+       |
 | Hands-on Labs             | 30+       |
 | Projects                  | 2+        |
 | Architecture Diagrams     | 5         |
@@ -179,6 +179,20 @@ The goal is not just to understand the tools, but to understand the problems the
 - ✔ Registry & Docker Hub
 - ✔ Docker CLI Cheatsheet
 
+### GitHub Actions
+
+- ✔ Introduction
+- ✔ First CI Pipeline
+- ✔ Job Dependencies
+- ✔ Dependency Caching
+- ✔ Workflow Status Badge
+- ✔ GitHub-Hosted Runners
+- ✔ Marketplace Actions
+- ✔ Environment Variables
+- ✔ GitHub Secrets
+- ✔ Matrix Strategy
+- ✔ Docker Build Pipeline
+
 ---
 
 ## 🛠️ Tech Stack (Learning Progress)
@@ -208,7 +222,7 @@ learning-devops/
 ├── docs/
 │   ├── devops/
 │   ├── docker/
-|   ├── github-actions/
+│   ├── github-actions/
 │   ├── linux/
 │   └── roadmap.md
 ├── labs/
