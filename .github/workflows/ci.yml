@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Verify Markdown Files
         run: find . -name "*.md"
@@ -42,7 +42,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # Display information about the GitHub-hosted runner
       - name: Runner Information
@@ -57,7 +57,7 @@ jobs:
           docker --version
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
@@ -93,7 +93,7 @@ jobs:
           echo "Python Version: ${{ matrix.python-version }}" >> build-report.txt
 
       - name: Upload Build Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           # Create a unique artifact for each matrix job
           name: build-report-python-${{ matrix.python-version }}
@@ -107,7 +107,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Build Docker Image
         timeout-minutes: 10
@@ -143,7 +143,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Validate Compose File
         run: |
