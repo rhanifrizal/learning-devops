@@ -96,7 +96,7 @@ The goal is not just to understand the tools, but to understand the problems the
 - [x] Sprint 1 - DevOps Foundations
 - [x] Sprint 2 - Linux Fundamentals
 - [x] Sprint 3 - Docker Fundamentals
-- [ ] Sprint 4 - GitHub Actions (CI/CD)
+- [x] Sprint 4 - GitHub Actions (CI/CD)
 - [ ] Sprint 5 - AWS Fundamentals
 - [ ] Sprint 6 - Terraform
 - [ ] Sprint 7 - Kubernetes
@@ -108,14 +108,14 @@ The goal is not just to understand the tools, but to understand the problems the
 
 ## 📈 Current Progress
 
-**Current Milestone:** CI/CD Automation with GitHub Actions
+**Current Milestone:** Cloud Computing with AWS
 
 | Module            | Progress          |
 |-------------------|-------------------|
 | Linux             | ██████████ 100%   |
 | Git               | ██████████ 100%   |
 | Docker            | ██████████ 100%   |
-| GitHub Actions    | ███████░░░ 75%    |
+| GitHub Actions    | ██████████ 100%   |
 | AWS               | ░░░░░░░░░░ 0%     |
 | Terraform         | ░░░░░░░░░░ 0%     |
 | Kubernetes        | ░░░░░░░░░░ 0%     |
@@ -128,7 +128,7 @@ The goal is not just to understand the tools, but to understand the problems the
 
 | Category                  | Count     |
 |---------------------------|-----------|
-| Documentation Articles    | 34+       |
+| Documentation Articles    | 36+       |
 | Hands-on Labs             | 30+       |
 | Projects                  | 2+        |
 | Architecture Diagrams     | 5         |
@@ -192,6 +192,8 @@ The goal is not just to understand the tools, but to understand the problems the
 - ✔ GitHub Secrets
 - ✔ Matrix Strategy
 - ✔ Docker Build Pipeline
+- ✔ Complete CI Pipeline
+- ✔ GitHub CLI Cheatsheet
 
 ---
 
@@ -202,7 +204,7 @@ The goal is not just to understand the tools, but to understand the problems the
 | Linux          | ✅           |
 | Git            | ✅           |
 | Docker         | ✅           |
-| GitHub Actions | 🚧           |
+| GitHub Actions | ✅           |
 | AWS            | ⏳           |
 | Terraform      | ⏳           |
 | Kubernetes     | ⏳           |
